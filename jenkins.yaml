@@ -8,7 +8,7 @@ spec:
       app: jenkins-demo
   template:
     metadata:
-      labels
+      labels:
         app: jenkins-demo
     spec:
       containers:
