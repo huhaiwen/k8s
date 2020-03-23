@@ -6,6 +6,6 @@ import(
 )
 
 func main(){
-	fmt.println("hello jenkins")
+	fmt.Println("hello jenkins")
 	fmt.Println("BRANCH_NAME:", os.Getenv("branch"))
 }
