@@ -7,5 +7,5 @@ import(
 
 func main(){
 	fmt.Println("hello jenkins")
-	fmt.Println("BRANCH_NAME:", os.Getenv("branch"))
+	fmt.Println("BRANCH_NAME1:", os.Getenv("branch"))
 }
