@@ -30,6 +30,6 @@ node('huhaiwen-jnlp') {
     }
     sh "sed -i 's/<BUILD_TAG>/${build_tag}/' jenkins.yaml"
     sh "sed -i 's/<BRANCH_NAME>/${env.BRANCH_NAME}/' jenkins.yaml"
-    sh "kubectl apply -f k8s.yaml --record"
+    sh "kubectl apply -f jenkins.yaml --record"
   }
 }
