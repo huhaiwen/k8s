@@ -4,7 +4,7 @@ metadata:
   name: jenkins-demo
 spec:
   selector:
-    mathchLabels:
+    matchLabels:
       app: jenkins-demo
   template:
     metadata:
@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: jenkins-demo
-        images: huhaiwen/jenkins-demo:<BUILD_TAG>
-        imagePullPolicy: ifNotPresent
+        image: huhaiwen/jenkins-demo:<BUILD_TAG>
+        imagePullPolicy: IfNotPresent
         env: 
         - name: branch
           value: <BRANCH>
