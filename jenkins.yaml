@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: jenkins-demo
-        images: huhaiwen/k8s
+        images: huhaiwen/jenkins-demo:<BUILD_TAG>
 	imagePullPolicy: ifNotPresent
 	env: 
 	- name: branch
-	  value: master
+	  value: <BRANCH>
