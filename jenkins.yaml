@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployments
+kind: Deployment
 metadata:
   name: jenkins-demo
 spec:
@@ -14,7 +14,7 @@ spec:
       containers:
       - name: jenkins-demo
         images: huhaiwen/jenkins-demo:<BUILD_TAG>
-	imagePullPolicy: ifNotPresent
-	env: 
-	- name: branch
-	  value: <BRANCH>
+        imagePullPolicy: ifNotPresent
+        env: 
+        - name: branch
+          value: <BRANCH>
