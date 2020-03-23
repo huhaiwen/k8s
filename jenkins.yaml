@@ -17,4 +17,4 @@ spec:
         imagePullPolicy: IfNotPresent
         env: 
         - name: branch
-          value: <BRANCH>
+          value: <BRANCH_NAME>
