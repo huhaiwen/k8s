@@ -1,4 +1,4 @@
-node('huhaiwen-jnlp') {
+node('hostname=k8s-1,kubernetes.io') {
   stage('Prepare') {
     echo "1.初始化环境变量"
     checkout scm
